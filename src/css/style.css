@@ -101,6 +101,11 @@ nav .menu {
   text-transform: uppercase;
 }
 
+.subheader .subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
 .promo {
   min-height: 800px;
   background: url(../img/bg/main_bg.png) center center/cover no-repeat;
@@ -153,6 +158,11 @@ nav .menu {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.promo .promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
 }
 
 .reasons {
@@ -307,6 +317,37 @@ nav .menu {
   cursor: pointer;
 }
 
+.opportunities .app_item_plus:before {
+  content: '';
+  display: block;
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.opportunities .app_item_plus:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 14px;
+  width: 2px;
+  background-color: #1eacc7;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.opportunities .app_item_plus:hover:before, .opportunities .app_item_plus:hover:after {
+  background-color: #ff5656;
+}
+
 .opportunities .app_item_1 {
   background: url("../img/app/1.png") center center/cover no-repeat;
 }
@@ -361,5 +402,51 @@ nav .menu {
   width: 100%;
   background-color: #070716;
   z-index: 1;
+}
+
+.terms {
+  padding: 68px 0 69px 0;
+}
+
+.terms_item {
+  margin-top: 33px;
+  margin-bottom: 30px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.terms_blue_header {
+  color: #1eacc7;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.terms_blue_descr {
+  color: #1eacc7;
+}
+
+.terms_red_header {
+  color: #ff5656;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.terms .terms_list {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.terms .terms_list li {
+  margin-bottom: 10px;
+}
+
+.terms .terms_list li:before {
+  content: '';
+  display: block;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/blue_check.png") center center/cover no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
