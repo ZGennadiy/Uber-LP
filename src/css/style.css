@@ -453,24 +453,43 @@ nav .menu {
   top: 2px;
   width: 21px;
   height: 20px;
-  background: url("../icons/blue_check.png") center center/cover no-repeat;
+  background: url("../icons/blue_check.svg") center center/cover no-repeat;
 }
 
 .terms ul.red li:before {
-  background: url("../icons/red_check.png") center center/cover no-repeat;
+  background: url("../icons/red_check.svg") center center/cover no-repeat;
 }
 
 .worldwide {
   min-height: 717px;
   padding: 49px 0;
+  position: relative;
   background: url("../img/bg/worldwide_bg.png") center center/cover no-repeat;
 }
 
-.worldwide a {
+.worldwide .all_cities {
+  display: block;
+  margin-bottom: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 49px;
+}
+
+.worldwide .all_cities a {
   color: #1eacc7;
   text-transform: uppercase;
-  vertical-align: bottom;
-  text-align: center;
   font-size: 15px;
+}
+
+.footer_white {
+  background-color: white;
+  min-height: 148px;
+}
+
+.footer_black {
+  min-height: 8px;
+  background-color: #070716;
 }
 /*# sourceMappingURL=style.css.map */
