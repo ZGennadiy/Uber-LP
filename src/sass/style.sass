@@ -12,7 +12,7 @@ $second-color: #ff5656
 header 
 	position: relative 
 
-nav 
+nav.header_nav
 	min-height: 50px 
 	background-color: #212121 
 	position: fixed 
@@ -342,7 +342,7 @@ nav
 	min-height: 717px
 	padding: 49px 0
 	position: relative
-	background: url('../img/bg/worldwide_bg.png') center center/cover no-repeat 
+	background: url('../img/bg/worldwide_bg.png') center (center / cover) no-repeat
 	.all_cities
 		display: block
 		margin-bottom: 0
@@ -358,6 +358,33 @@ nav
 .footer_white
 	background-color: white
 	min-height: 148px
+	padding: 14px 0 31px 0
+	.devider
+		width: 299px
+		height: 4px
+		margin: 0 auto
+		background-color: $accent-color
+	.wrapper
+		padding: 0 23px
+		display: flex
+		justify-content: space-between
+		.social
+			width: 153px
+			height: 32px
+			.social_link
+				display: inline-block
+				width: 32px
+				height: 32px
+				border-radius: 50%
+			.fb
+				background: #070716 url('../icons/icons8-facebook-f-50.png') center center/ 20px auto no-repeat
+			.tw
+				background: #070716 url('../icons/icons8-twitter-в-квадрате-50.png') center center/ 20px auto no-repeat
+			.linkedin
+				background: #070716 url('../icons/icons8-линкедин-50.png') center center/ 20px auto no-repeat
+			.instagram
+				background: #070716 url('../icons/icons8-instagram-50.png') center center/ 20px auto no-repeat
+
 
 .footer_black
 	min-height: 8px
