@@ -499,6 +499,7 @@ nav.header_nav .menu {
 
 .footer_white .wrapper {
   padding: 0 23px;
+  margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,32 +508,158 @@ nav.header_nav .menu {
           justify-content: space-between;
 }
 
-.footer_white .wrapper .social {
+.footer_white .wrapper > div {
+  width: 33%;
+}
+
+.footer_white .wrapper > div:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer_white .wrapper > div .social {
+  margin-top: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 153px;
   height: 32px;
 }
 
-.footer_white .wrapper .social .social_link {
-  display: inline-block;
+.footer_white .wrapper > div .social_link {
   width: 32px;
   height: 32px;
   border-radius: 50%;
 }
 
-.footer_white .wrapper .social .fb {
+.footer_white .wrapper > div .social .fb {
   background: #070716 url("../icons/icons8-facebook-f-50.png") center center/20px auto no-repeat;
 }
 
-.footer_white .wrapper .social .tw {
+.footer_white .wrapper > div .social .tw {
   background: #070716 url("../icons/icons8-twitter-в-квадрате-50.png") center center/20px auto no-repeat;
 }
 
-.footer_white .wrapper .social .linkedin {
+.footer_white .wrapper > div .social .linkedin {
   background: #070716 url("../icons/icons8-линкедин-50.png") center center/20px auto no-repeat;
 }
 
-.footer_white .wrapper .social .instagram {
+.footer_white .wrapper > div .social .instagram {
   background: #070716 url("../icons/icons8-instagram-50.png") center center/20px auto no-repeat;
+}
+
+.footer_white .wrapper > div .footer_menu {
+  min-width: 390px;
+}
+
+.footer_white .wrapper > div .footer_menu .footer_main_menu {
+  min-width: 364px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.footer_white .wrapper > div .footer_menu .footer_main_menu .menu_item {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.footer_white .wrapper > div .footer_menu .footer_main_menu .menu_item .menu_link {
+  color: #070716;
+}
+
+.footer_white .wrapper > div .footer_menu .footer_main_menu .menu_item .menu_link:hover {
+  text-decoration: none;
+  color: #1eacc7;
+}
+
+.footer_white .wrapper > div .footer_menu .footer_sub_menu {
+  margin: 15px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_white .wrapper > div .footer_menu .footer_sub_menu .menu_item {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.footer_white .wrapper > div .footer_menu .footer_sub_menu .menu_item .menu_link {
+  color: #999999;
+}
+
+.footer_white .wrapper > div .footer_menu .footer_sub_menu .menu_item .menu_link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.footer_white .wrapper > div .get_app {
+  margin-top: 4px;
+  width: 296px;
+  height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_white .wrapper > div .get_app_item {
+  width: 95px;
+  height: 27px;
+  border-radius: 5%;
+  background: url("../icons/app.png") no-repeat;
+}
+
+.footer_white .wrapper > div .get_app .for_ios {
+  background-position: 0px 0px;
+}
+
+.footer_white .wrapper > div .get_app .for_android {
+  background-position: -100px 0px;
+}
+
+.footer_white .wrapper > div .get_app .for_windowsmobile {
+  background-position: -200px 0px;
+}
+
+.footer_white .language {
+  margin-top: 19px;
+  text-align: center;
+}
+
+.footer_white .language_choose {
+  color: #1eacc7;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer_white .language_choose:hover {
+  text-decoration: none;
+  color: #ff5656;
 }
 
 .footer_black {

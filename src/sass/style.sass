@@ -366,13 +366,21 @@ nav.header_nav
 		background-color: $accent-color
 	.wrapper
 		padding: 0 23px
+		margin-top: 32px
 		display: flex
 		justify-content: space-between
+	.wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
 		.social
+			margin-top: 3px
+			display: flex
+			justify-content: space-between
 			width: 153px
 			height: 32px
-			.social_link
-				display: inline-block
+			&_link
 				width: 32px
 				height: 32px
 				border-radius: 50%
@@ -384,6 +392,70 @@ nav.header_nav
 				background: #070716 url('../icons/icons8-линкедин-50.png') center center/ 20px auto no-repeat
 			.instagram
 				background: #070716 url('../icons/icons8-instagram-50.png') center center/ 20px auto no-repeat
+		.footer_menu
+			min-width: 390px
+			.footer_main_menu
+				min-width: 364px
+				list-style: none
+				display: flex
+				justify-content: space-between
+				padding: 0 10px
+				margin: 0
+				.menu_item
+					font-size: 15px
+					font-weight: 300
+					text-transform: uppercase
+					.menu_link
+						color: #070716
+						&:hover
+							text-decoration: none
+							color: $accent-color
+			.footer_sub_menu
+				margin: 15px 0 0 0
+				padding: 0
+				list-style: none
+				display: flex
+				justify-content: space-between
+				.menu_item
+					font-size: 11px
+					font-weight: 300
+					text-transform: uppercase
+					.menu_link
+						color: #999999
+						&:hover
+							text-decoration: none
+							color: black
+		.get_app
+			margin-top: 4px
+			width: 296px
+			height: 27px
+			display: flex
+			justify-content: space-between
+			&_item
+				width: 95px
+				height: 27px
+				border-radius: 5%
+				background: url('../icons/app.png') no-repeat
+			.for_ios
+				background-position: 0px 0px
+			.for_android
+				background-position: -100px 0px
+			.for_windowsmobile
+				background-position: -200px 0px
+	.language
+		margin-top: 19px
+		text-align: center
+		&_choose
+			color: $accent-color
+			font-size: 11px
+			font-weight: 400
+			text-transform: uppercase
+			&:hover
+				text-decoration: none
+				color: $second-color
+
+
+	
 
 
 .footer_black
