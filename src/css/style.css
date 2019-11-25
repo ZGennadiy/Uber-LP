@@ -666,4 +666,13 @@ nav.header_nav .menu {
   min-height: 8px;
   background-color: #070716;
 }
+
+@media (max-width: 1200px) {
+  .menu_item {
+    padding-right: 20px;
+  }
+  .menu_link {
+    font-style: 13px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
