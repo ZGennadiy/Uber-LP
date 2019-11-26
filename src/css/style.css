@@ -28,18 +28,18 @@ nav.header_nav .menu {
   list-style: none;
 }
 
-.menu .menu_link {
+.menu_link {
   color: #ffffff;
   font-size: 15px;
   font-weight: 300;
 }
 
-.menu .menu_item {
+.menu_item {
   border-right: 2px dotted black;
   padding-right: 28px;
 }
 
-.menu .menu_item:last-child {
+.menu_item:last-child {
   border-right: none;
 }
 
@@ -672,7 +672,18 @@ nav.header_nav .menu {
     padding-right: 20px;
   }
   .menu_link {
-    font-style: 13px;
+    font-size: 13px;
+  }
+  .promo .promo_header {
+    font-size: 50px;
+  }
+  .reasons .reasons_item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reasons .reasons_descr {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
