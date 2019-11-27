@@ -3,7 +3,7 @@ header
 	height: 50px
 
 .header_nav
-	min-height: 50px 
+	height: 50px
 	background-color: #212121 
 	position: fixed 
 	z-index: 5
@@ -24,7 +24,11 @@ header
 		font-size: 15px 
 		font-weight: 300
 		&:hover
-			color: #ffffff
+			text-decoration: none
+			color: $accent-color
+
+.hamburger
+	display: none
 	
 .subheader 
 	position: absolute 
@@ -74,7 +78,6 @@ header
 		font-weight: 400 
 		text-transform: uppercase
 		@include btn_hover
-
 
 .promo 
 	min-height: 800px 
