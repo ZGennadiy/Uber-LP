@@ -1,54 +1,54 @@
 header 
 	position: relative 
-	height: 50px
 
-.header_nav
+nav.header_nav
 	min-height: 50px 
 	background-color: #212121 
 	position: fixed 
-	z-index: 5
+	top: 0 
+	z-index: 100 
 	width: 100% 
-	&_menu 
+	.menu 
 		display: flex 
 		justify-content: space-between 
 		padding: 13px 70px 
 		margin: 0 
 		list-style: none 
-		&_item 
-		border-right: 2px dotted black 
-		padding-right: 28px
-		&:last-child 
-			border-right: none
-.header_nav_menu_link 
-		color: #ffffff
+
+.menu 
+	&_link 
+		color: #ffffff 
 		font-size: 15px 
-		font-weight: 300
-		&:hover
-			color: #ffffff
-	
+		font-weight: 300 
+	&_item 
+		border-right: 2px dotted black 
+		padding-right: 28px 
+		&:last-child 
+			border-right: none 
+
 .subheader 
 	position: absolute 
 	top: 50px 
 	width: 100% 
 	min-height: 84px 
 	background-color: rgba(0, 0, 0, .6) 
-	&_logo 
+	.subheader_logo 
 		display: block 
 		margin-top: 16px 
 		min-width: 100% 
-	&_official 
+	.subheader_official 
 		margin-top: 6px 
 		color: #ffffff 
 		opacity: 0.5 
 		font-size: 13px 
 		font-weight: 400 
-	&_call 
+	.subheader_call 
 		margin-top: 19px 
 		color: #ffffff 
 		font-size: 12px 
 		font-weight: 300 
 		text-align: right 
-	&_phone 
+	.subheader_phone 
 		display: block 
 		margin-top: 8px 
 		color: #ffffff 
@@ -57,10 +57,8 @@ header
 		text-decoration: none 
 		text-transform: uppercase 
 		line-height: 12px 
-		text-align: right
-		&:hover
-			color: #ffffff
-	&_btn 
+		text-align: right 
+	.subheader_btn 
 		margin-top: 19px 
 		width: 172px 
 		height: 46px 
@@ -80,7 +78,7 @@ header
 	min-height: 800px 
 	background: url(../img/bg/main_bg.png) center center/cover no-repeat 
 	padding: 150px 0 135px 0 
-	&_header 
+	.promo_header 
 		color: #ffffff 
 		font-weight: 700 
 		text-transform: uppercase 
@@ -88,7 +86,7 @@ header
 		line-height: 60px 
 		margin: 0 
 		text-align: center 
-	&_subheader 
+	.promo_subheader 
 		color: #ffffff 
 		font-size: 36px 
 		font-weight: 700 
@@ -97,14 +95,14 @@ header
 		margin: 0 
 		margin-top: 22px 
 		text-align: center 
-	&_descr 
+	.promo_descr 
 		color: #ffffff 
 		font-size: 18px 
 		font-weight: 400 
 		line-height: 24px 
 		text-align: center 
 		margin-top: 23px 
-	&_btn 
+	.promo_btn 
 		display: block 
 		margin: 118px auto 0 auto 
 		width: 259px 
@@ -124,7 +122,7 @@ header
 .reasons 
 	min-height: 900px 
 	padding: 71px 0 65px 0 
-	&_item 
+	.reasons_item 
 		display: flex 
 		padding: 0 43px 0 35px 
 		margin-top: 40px 
@@ -137,20 +135,21 @@ header
 		display: flex 
 		justify-content: center 
 		align-items: center 
-	&_descr 
+	.reasons_descr 
 		width: 341px 
+		height: 141px 
 		color: #202020 
 		font-size: 15px 
 		font-weight: 300 
 		line-height: 21px 
 		margin-left: 26px 
 		text-align: justify 
-		&_subheader 
+		.reasons_descr_subheader 
 			color: $accent-color
 			font-size: 17px 
 			font-weight: 400 
 			margin: 0 
-		&_text 
+		.reasons_descr_text 
 			margin: 0 
 
 .label
@@ -308,7 +307,7 @@ header
 		color: $second-color
 		font-size: 22px
 		font-weight: 400
-	&_list
+	.terms_list
 		list-style-type: none
 		margin-top: 10px
 		padding-left: 50px
@@ -391,30 +390,30 @@ header
 				justify-content: space-between
 				padding: 0 10px
 				margin: 0
-				&_item
+				.menu_item
 					font-size: 15px
 					font-weight: 300
 					text-transform: uppercase
-				&_link
-					color: #070716
-					&:hover
-						text-decoration: none
-						color: $accent-color
+					.menu_link
+						color: #070716
+						&:hover
+							text-decoration: none
+							color: $accent-color
 			.footer_sub_menu
 				margin: 15px 0 0 0
 				padding: 0
 				list-style: none
 				display: flex
 				justify-content: space-between
-				&_item
+				.menu_item
 					font-size: 11px
 					font-weight: 300
 					text-transform: uppercase
-				&_link
-					color: #999999
-					&:hover
-						text-decoration: none
-						color: black
+					.menu_link
+						color: #999999
+						&:hover
+							text-decoration: none
+							color: black
 		.get_app
 			margin-top: 4px
 			width: 296px
