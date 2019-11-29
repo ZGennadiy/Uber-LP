@@ -34,24 +34,28 @@ header
 	position: absolute 
 	top: 50px 
 	width: 100% 
-	min-height: 84px 
+	height: 84px 
 	background-color: rgba(0, 0, 0, .6) 
+
 	&_logo 
 		display: block 
 		margin-top: 16px 
 		min-width: 100% 
+
 	&_official 
 		margin-top: 6px 
 		color: #ffffff 
 		opacity: 0.5 
 		font-size: 13px 
 		font-weight: 400 
+
 	&_call 
 		margin-top: 19px 
 		color: #ffffff 
 		font-size: 12px 
 		font-weight: 300 
 		text-align: right 
+
 	&_phone 
 		display: block 
 		margin-top: 8px 
@@ -64,6 +68,7 @@ header
 		text-align: right
 		&:hover
 			color: #ffffff
+
 	&_btn 
 		margin-top: 19px 
 		width: 172px 
@@ -79,10 +84,14 @@ header
 		text-transform: uppercase
 		@include btn_hover
 
+.xs-visible
+	display: none
+
 .promo 
 	min-height: 800px 
 	background: url(../img/bg/main_bg.png) center center/cover no-repeat 
 	padding: 150px 0 135px 0 
+
 	&_header 
 		color: #ffffff 
 		font-weight: 700 
@@ -91,6 +100,7 @@ header
 		line-height: 60px 
 		margin: 0 
 		text-align: center 
+
 	&_subheader 
 		color: #ffffff 
 		font-size: 36px 
@@ -100,6 +110,7 @@ header
 		margin: 0 
 		margin-top: 22px 
 		text-align: center 
+
 	&_descr 
 		color: #ffffff 
 		font-size: 18px 
@@ -107,6 +118,7 @@ header
 		line-height: 24px 
 		text-align: center 
 		margin-top: 23px 
+
 	&_btn 
 		display: block 
 		margin: 118px auto 0 auto 
@@ -127,10 +139,12 @@ header
 .reasons 
 	min-height: 900px 
 	padding: 71px 0 65px 0 
+
 	&_item 
 		display: flex 
 		padding: 0 43px 0 35px 
 		margin-top: 40px 
+
 	.img_bg 
 		width: 113px 
 		height: 113px 
@@ -140,6 +154,7 @@ header
 		display: flex 
 		justify-content: center 
 		align-items: center 
+
 	&_descr 
 		width: 341px 
 		color: #202020 
@@ -148,11 +163,13 @@ header
 		line-height: 21px 
 		margin-left: 26px 
 		text-align: justify 
+
 		&_subheader 
 			color: $accent-color
 			font-size: 17px 
 			font-weight: 400 
 			margin: 0 
+
 		&_text 
 			margin: 0 
 
@@ -169,6 +186,7 @@ header
 	text-transform: uppercase 
 	margin: 0 auto  0 auto 
 	z-index: 2
+
 	&_white 
 		background-color: #fff
 		color: #000
@@ -386,9 +404,7 @@ header
 			.instagram
 				background: #070716 url('../icons/icons8-instagram-50.png') center center/ 20px auto no-repeat
 		.footer_menu
-			min-width: 390px
 			.footer_main_menu
-				min-width: 364px
 				list-style: none
 				display: flex
 				justify-content: space-between

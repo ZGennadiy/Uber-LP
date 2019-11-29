@@ -53,7 +53,7 @@ header {
   position: absolute;
   top: 50px;
   width: 100%;
-  min-height: 84px;
+  height: 84px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -115,6 +115,10 @@ header {
 .subheader_btn:hover {
   background-image: none;
   background-color: #1eacc7;
+}
+
+.xs-visible {
+  display: none;
 }
 
 .promo {
@@ -564,12 +568,7 @@ header {
   background: #070716 url("../icons/icons8-instagram-50.png") center center/20px auto no-repeat;
 }
 
-.footer_white .wrapper > div .footer_menu {
-  min-width: 390px;
-}
-
 .footer_white .wrapper > div .footer_menu .footer_main_menu {
-  min-width: 364px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,6 +799,88 @@ header {
   .hamburger_active span:nth-child(3) {
     -webkit-transform: translateY(3px) rotate(45deg);
             transform: translateY(3px) rotate(45deg);
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .subheader_btn {
+    display: block;
+    height: 40px;
+    width: 200px;
+    margin: 10px auto 0 auto;
+  }
+  .promo_header {
+    line-height: 45px;
+  }
+  .choice_img {
+    width: 95%;
+  }
+  .footer_white .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) and (max-width: 575px) {
+  .header_nav_menu {
+    width: 85%;
+  }
+  .subheader {
+    height: 60px;
+  }
+  .subheader_official {
+    display: none;
+  }
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  .subheader_phone {
+    font-size: 12px;
+    margin-top: 11px;
+  }
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  .promo {
+    min-height: 400px;
+    padding-top: 93px;
+    padding-bottom: 35px;
+  }
+  .promo_header {
+    font-size: 30px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  .promo_subheader {
+    font-size: 20px;
+    margin-top: 33px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_btm {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
   }
 }
 /*# sourceMappingURL=style.css.map */
