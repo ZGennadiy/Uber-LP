@@ -388,8 +388,6 @@ header
 		.social
 			margin-top: 3px
 			display: flex
-			justify-content: space-between
-			width: 153px
 			height: 32px
 			&_link
 				width: 32px
@@ -403,6 +401,10 @@ header
 				background: #070716 url('../icons/icons8-линкедин-50.png') center center/ 20px auto no-repeat
 			.instagram
 				background: #070716 url('../icons/icons8-instagram-50.png') center center/ 20px auto no-repeat
+				
+		.social_link + .social_link
+				margin-left: 5px
+			
 		.footer_menu
 			.footer_main_menu
 				list-style: none
@@ -429,15 +431,18 @@ header
 					font-size: 11px
 					font-weight: 300
 					text-transform: uppercase
+					white-space: nowrap
 				&_link
 					color: #999999
 					&:hover
 						text-decoration: none
 						color: black
+				.footer_sub_menu_item + .footer_sub_menu_item
+					margin-left: 5px
+
 		.get_app
 			margin-top: 4px
-			width: 296px
-			height: 27px
+			min-height: 27px
 			display: flex
 			justify-content: space-between
 			&_item
