@@ -19,3 +19,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# service files in root
+/*.gitattributes
+/gulpfile.js
+/package.json
+/package-lock.json
